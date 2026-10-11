@@ -1,6 +1,7 @@
-// VIRA MCP server scaffold
-// Mirrors rea-agents pattern: agent calls tools over MCP, server returns findings with evidence.
-// Wire each tool to X API v2 or your configured data source. Never fabricate metrics.
+// VIRA MCP server: tool definitions below. The real workflow layer lives in
+// ./x-client.js (X API v2 fetch + normalize) and ./analyze.js (pure analysis).
+// CLI (cli/index.js) runs the same pipeline; wire these handlers to it once
+// @modelcontextprotocol/sdk is installed.
 
 export const TOOLS = [
   {

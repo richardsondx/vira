@@ -34,9 +34,10 @@ Replace @levelsio with your target creator.
 
 ### Use the terminal
 
-Analyze a creator to stdout as JSON:
+Analyze a creator to stdout as JSON (requires `X_BEARER_TOKEN` from an X dev app on the Basic tier, $200/mo or higher):
 
 ```
+export X_BEARER_TOKEN=<bearer token>
 npx -y vira-agents@latest analyze @levelsio --json
 ```
 
